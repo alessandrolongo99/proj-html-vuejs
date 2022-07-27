@@ -6,10 +6,19 @@
       showcasing universities, courses, secondary schools etc.
     </p>
     <div class="buttons">
-      <button>
+      <div class="floating-buttons">
+        <button class="top-button">
+          <i class="fa-solid fa-lg fa-cart-shopping"></i>
+        </button>
+        <button><i class="fa-solid fa-lg fa-book-open"></i></button>
+        <button class="bot-button">
+          <i class="fa-solid fa-lg fa-life-ring"></i>
+        </button>
+      </div>
+      <button class="pill-button">
         <i class="fa-solid fa-magnifying-glass"></i> Search Courses
       </button>
-      <button class="apply">
+      <button class="pill-button apply">
         <i class="fa-solid fa-user-plus"></i> Apply for university
       </button>
     </div>
@@ -42,9 +51,32 @@ p {
 .buttons {
   padding-top: 50px;
   text-align: center;
+  position: relative;
 }
 
-button {
+.floating-buttons {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.623);
+  background-color: rgba(0, 0, 0, 0.192);
+  button {
+    border: none;
+    color: #fff;
+    background-color: #e9d758;
+    padding: 1rem;
+    &.top-button {
+      border-radius: 0 10px 0 0;
+    }
+    &.bot-button {
+      border-radius: 0 0 10px 0;
+    }
+  }
+}
+
+.pill-button {
   margin: 0 1rem;
   border: none;
   border-radius: 40px;
@@ -55,11 +87,11 @@ button {
   font-family: "Fredoka One", cursive;
   &:hover {
     cursor: pointer;
-    box-shadow: 0 5px 15px black;
+    box-shadow: 0 5px 15px #000;
     transition-property: box-shadow;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
   }
-  &.apply{
+  &.apply {
     background-color: #fff;
     color: #e56768;
   }
