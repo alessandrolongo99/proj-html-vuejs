@@ -81,6 +81,7 @@ main {
   background-image: url("../../../assets/img/home-background.png");
   background-repeat: no-repeat;
   margin-top: 1rem;
+  margin-bottom: 15rem;
 }
 
 .courses-container {

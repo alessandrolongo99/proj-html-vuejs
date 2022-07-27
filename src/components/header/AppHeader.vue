@@ -26,11 +26,12 @@ header {
   background-repeat: no-repeat;
   height: 850px;
   position: relative;
+  overflow-x: hidden;
 }
 
 img {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  transform: translate(-100px, 0);
 }
 </style>
