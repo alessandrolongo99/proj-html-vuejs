@@ -38,6 +38,49 @@
         </p>
       </div>
     </div>
+
+    <img
+      class="clock"
+      src="../../../assets/img/upcoming-events-calendar-icon.png"
+      alt=""
+    />
+    <h1 class="upcoming">Upcoming Events</h1>
+
+    <div class="coaching-sessions">
+      <div class="card">
+        <h2>Coaching Sessions</h2>
+        <span><i class="fa-solid fa-calendar-days"></i> 20 May 21:30 PM</span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit, sed do
+          eiusmod tempor[...]
+        </p>
+        <button><i class="fa-solid fa-plus"></i> Find More</button>
+      </div>
+
+      <div class="card">
+        <h2>Coaching Sessions</h2>
+        <span><i class="fa-solid fa-calendar-days"></i> 24 Mar 18:00 PM</span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit, sed do
+          eiusmod tempor[...]
+        </p>
+        <button><i class="fa-solid fa-plus"></i> Find More</button>
+      </div>
+
+      <div class="card">
+        <h2>Coaching Sessions</h2>
+        <span><i class="fa-solid fa-calendar-days"></i> 12 Feb 13:30 PM</span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit, sed do
+          eiusmod tempor[...]
+        </p>
+        <button><i class="fa-solid fa-plus"></i> Find More</button>
+      </div>
+    </div>
+
+    <button class="view-all">View All Events</button>
+
+    <img class="bot-wave" src="../../../assets/svg/svg-1.svg" alt="" />
   </main>
 </template>
 
@@ -48,10 +91,10 @@ export default {};
 <style lang="scss" scoped>
 main {
   background-color: #e56768;
-  height: 1000px;
   position: relative;
   overflow-x: clip;
   padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 
 .top-wave {
@@ -72,6 +115,7 @@ h1 {
   text-align: center;
   font-size: 4rem;
   margin-top: 1.6rem;
+  color: #fff;
 }
 
 mark {
@@ -127,5 +171,88 @@ mark {
     bottom: -120px;
     left: 545px;
   }
+}
+
+.upcoming {
+  margin-bottom: 3rem;
+}
+
+.coaching-sessions {
+  width: calc(65% + 2rem);
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  h2 {
+    font-family: "Fredoka One", cursive;
+    text-align: center;
+    color: #454545;
+  }
+  p,
+  span {
+    font-family: "Roboto", sans-serif;
+    color: #8b8b8a;
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+  }
+  span {
+    font-size: 0.8rem;
+    margin: 0.8rem 0;
+  }
+  .card {
+    position: relative;
+    background-color: #fff;
+    width: calc(100% / 3);
+    margin: 0 1rem;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    button {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      font-family: "Fredoka One", cursive;
+      margin-top: 2rem;
+      border: none;
+      border-radius: 40px;
+      padding: 1rem 2rem;
+      color: #fff;
+      background-color: #e56768;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      font-size: 1.2rem;
+      display: block;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        transition-property: box-shadow;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+}
+
+.view-all {
+  font-family: "Fredoka One", cursive;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 40px;
+  padding: 1.2rem 3rem;
+  color: #fff;
+  background-color: #e9d758;
+  font-size: 1.2rem;
+  margin: 5rem auto;
+  display: block;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+  }
+}
+
+.bot-wave {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-5%, 99%);
+  display: block;
 }
 </style>
