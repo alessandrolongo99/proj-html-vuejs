@@ -26,18 +26,47 @@
       </p>
 
       <div class="faculties-bar">
-        <div>
-          <img src="../../../assets/img/Gavel-v2.png" alt="" />
-          <span>Law Faculty</span>
+        <div class="faculties-container">
+          <div>
+            <img src="../../../assets/img/Gavel-v2.png" alt="" />
+            <span>Law Faculty</span>
+          </div>
+          <div>
+            <img src="../../../assets/img/Coins-tabs-v2.png" alt="" />
+            <span>Economy</span>
+          </div>
+          <div>
+            <img src="../../../assets/img/Medicine-tabs-v2.png" alt="" />
+            <span>Medicine</span>
+          </div>
+          <div>
+            <img src="../../../assets/img/Computer-tabs-v2.png" alt="" />
+            <span>Computer Science</span>
+          </div>
+          <div>
+            <img src="../../../assets/img/Palette-tabs-v2.png" alt="" />
+            <span>Graphic Design</span>
+          </div>
         </div>
-        <div><img src="../../../assets/img/Coins-tabs-v2.png" alt="" />
-        <span>Economy</span></div>
-        <div><img src="../../../assets/img/Medicine-tabs-v2.png" alt="" />
-        <span>Medicine</span></div>
-        <div><img src="../../../assets/img/Computer-tabs-v2.png" alt="" />
-        <span>Computer Science</span></div>
-        <div><img src="../../../assets/img/Palette-tabs-v2.png" alt="" />
-        <span>Graphic Design</span></div>
+      </div>
+    </div>
+
+    <div class="law-faculty">
+      <div>
+        <img
+          src="../../../assets/img/Gavel-Illustration-e1556884768193.png"
+          alt=""
+        />
+      </div>
+      <div class="law-faculty-text">
+        <h1>Law Faculty</h1>
+        <p>
+          Learning from world-leading academics and practitioners, you'll not
+          only receive an out standing grounding in the theory of law, but you
+          will be able to understand how those principles are applied in
+          practice through a range of student-led activities and competitions.
+        </p>
+        <button>Read More</button>
       </div>
     </div>
   </main>
@@ -127,28 +156,78 @@ main {
     width: 370px;
     margin: 2rem auto;
   }
+}
+.faculties-bar {
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
 
-  .faculties-bar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    div {
-      height: 100%;
-      padding: 2rem 3rem;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      text-align: center;
-      width: 240px;
-      img {
-        height: 70px;
+.faculties-container {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  margin: 0 auto;
+  div {
+    height: 100%;
+    padding: 2rem 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(100% / 5);
+    img {
+      height: 70px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+    span {
+      font-family: "Fredoka One", cursive;
+      color: #e56768;
+    }
+  }
+}
+
+.law-faculty {
+  display: flex;
+width: 65%;
+margin: 0 auto;
+margin-top: 5rem;
+  div {
+    width: 50%;
+    img{
         display: block;
         margin: 0 auto;
-        margin-bottom: 1rem;
-      }
-      span {
-        font-family: "Fredoka One", cursive;
-        color: #e56768;
-      }
+    }
+  }
+}
+
+.law-faculty-text {
+  h1 {
+    font-family: "Fredoka One", cursive;
+    color: #454545;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    color: #8b8b8a;
+    margin-top: 2rem;
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+  }
+  button {
+    font-family: "Fredoka One", cursive;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 40px;
+    padding: 1.2rem 3rem;
+    color: #fff;
+    background-color: #e56768;
+    font-size: 1.2rem;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      transition-property: box-shadow;
+      transition-duration: 0.5s;
     }
   }
 }
