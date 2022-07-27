@@ -6,7 +6,7 @@
     <div class="right-nav">
       <ul>
         <li v-for="(item, index) in liItems" :key="index">
-          {{ item }} <i class="fa-solid fa-caret-down"></i>
+          {{ item.item }} <i v-if="item.dropDown" class="fa-solid fa-caret-down"></i>
         </li>
       </ul>
       <button>VIEW COURSES</button>
@@ -19,13 +19,13 @@ export default {
   data: function () {
     return {
       liItems: [
-        `Home`,
-        `Courses`,
-        `About Us`,
-        `News`,
-        `Pages`,
-        `Contact`,
-        `Purchase`,
+        { item: "Home", dropDown: true },
+        { item: "Courses", dropDown: true },
+        { item: "About Us", dropDown: false },
+        { item: "News", dropDown: true },
+        { item: "Pages", dropDown: true },
+        { item: "Contact", dropDown: false },
+        { item: "Purchase", dropDown: false },
       ],
     };
   },
@@ -76,9 +76,11 @@ button {
   color: #fff;
   background-color: #e9d758;
   font-size: 1.2rem;
-  &:hover{
+  &:hover {
     cursor: pointer;
-    box-shadow: inset 0 0 10px;
+    box-shadow: 0 5px 15px black;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
   }
 }
 </style>
