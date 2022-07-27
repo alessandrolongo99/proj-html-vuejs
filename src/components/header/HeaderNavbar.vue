@@ -79,7 +79,7 @@ button {
   font-size: 1.2rem;
   &:hover {
     cursor: pointer;
-    box-shadow: 0 5px 15px #000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     transition-property: box-shadow;
     transition-duration: 0.5s;
   }
