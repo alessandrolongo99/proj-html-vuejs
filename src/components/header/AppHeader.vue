@@ -2,6 +2,7 @@
   <header>
     <HeaderNavbar />
     <HeaderJumbo />
+    <img src="../../assets/img/Wave-1.png" alt="Wave-1" />
   </header>
 </template>
 
@@ -23,6 +24,12 @@ header {
   background: linear-gradient(#da5f60e6, #da5f60e6),
     url("../../assets/img/theme_slider2_bg-1.jpg");
   background-repeat: no-repeat;
-  height: 1000px;
+  height: 850px;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  bottom: 0;
 }
 </style>

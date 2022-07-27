@@ -6,7 +6,8 @@
     <div class="right-nav">
       <ul>
         <li v-for="(item, index) in liItems" :key="index">
-          {{ item.item }} <i v-if="item.dropDown" class="fa-solid fa-caret-down"></i>
+          {{ item.item }}
+          <i v-if="item.dropDown" class="fa-solid fa-caret-down"></i>
         </li>
       </ul>
       <button>VIEW COURSES</button>

@@ -73,6 +73,9 @@ p {
     &.bot-button {
       border-radius: 0 0 10px 0;
     }
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
