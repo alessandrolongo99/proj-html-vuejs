@@ -73,6 +73,10 @@ p {
     height: 55px;
     filter: invert(55%) sepia(7%) saturate(35%) hue-rotate(21deg)
       brightness(99%) contrast(89%);
+      &:hover{
+        filter: none;
+        cursor: pointer;
+      }
   }
 }
 </style>
