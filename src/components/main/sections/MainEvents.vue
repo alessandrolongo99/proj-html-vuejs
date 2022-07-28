@@ -211,7 +211,6 @@ mark {
       left: 50%;
       transform: translate(-50%, 50%);
       font-family: "Fredoka One", cursive;
-      margin-top: 2rem;
       border: none;
       border-radius: 40px;
       padding: 1rem 2rem;
@@ -219,7 +218,6 @@ mark {
       background-color: #e56768;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
       font-size: 1.2rem;
-      display: block;
       &:hover {
         cursor: pointer;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
