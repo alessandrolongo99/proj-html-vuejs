@@ -1,9 +1,11 @@
 <template>
   <footer>
-    <h1>Subscribe Now to Our Newsletter !</h1>
-    <div>
-      <input type="text" placeholder="Email address..." />
-      <button><i class="fa-solid fa-2x fa-paper-plane"></i></button>
+    <div class="container">
+      <h1>Subscribe Now to Our Newsletter !</h1>
+      <div>
+        <input type="text" placeholder="Email address..." />
+        <button><i class="fa-solid fa-2x fa-paper-plane"></i></button>
+      </div>
     </div>
   </footer>
 </template>
@@ -14,6 +16,10 @@ export default {};
 
 <style lang="scss" scoped>
 footer {
+  background-color: #e56768;
+}
+
+.container {
   width: 65%;
   margin: 0 auto;
   display: flex;
