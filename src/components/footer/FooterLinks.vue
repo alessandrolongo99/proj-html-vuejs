@@ -42,6 +42,21 @@
           <span class="copy">ModelTheme. All rights reserved.</span>
         </div>
       </div>
+
+      <div class="left-buttons">
+        <button class="left-button">
+          <img class="left-img" src="../../assets/svg/svg-3.svg" alt="" />
+          <span class="left-span">Purchase Theme</span>
+        </button>
+        <button class="left-button">
+          <img class="left-img" src="../../assets/svg/svg-2.svg" alt="" />
+          <span class="left-span">Related Themes</span>
+        </button>
+      </div>
+
+      <button class="right-button">
+        <img src="../../assets/img/back-to-top-arrow.svg" alt="">
+      </button>
     </div>
   </footer>
 </template>
@@ -87,7 +102,8 @@ footer {
 }
 
 .container {
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
+  position: relative;
 }
 
 .flex-container {
@@ -223,5 +239,48 @@ input {
   border-radius: 40px;
   padding: 0.3rem 2rem;
   height: 4rem;
+}
+
+.left-buttons {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  .left-button {
+    border: none;
+    border-radius: 5px;
+    margin: .6rem 0;
+    padding: .4rem .8rem;
+    height: 3rem;
+    background-color: #454545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 5px 15px black;
+  }
+  .left-img {
+    height: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  .left-span {
+    border: none;
+    border-radius: 0;
+    font-size: 1rem;
+    margin: 0;
+    margin-left: .8rem;
+    padding: 0;
+  }
+}
+
+.right-button{
+    position: absolute;
+    border: none;
+    background-color: #e9d758;
+    right: 50px;
+    bottom: 50px;
 }
 </style>

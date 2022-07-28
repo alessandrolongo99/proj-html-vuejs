@@ -62,7 +62,7 @@ p {
   font-size: 1.05rem;
   line-height: 1.8rem;
   text-align: center;
-  width: 45%;
+  width: 30%;
   margin: 2rem auto;
 }
 
